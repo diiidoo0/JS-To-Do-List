@@ -1,0 +1,126 @@
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+
+  li:active {
+    background: black;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the header */
+  .header, .header2 {
+    background-color: #ca463d;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+  }
+
+  /* Clear floats after the header */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 25px;
+    width: 100%;
+    padding: 15px;
+    float: left;
+    font-size: 16px;
+  }
+  
+  #buttonDIV {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* Style the "Add" button */
+  .btn {
+    padding: 10px;
+    width: 30%;
+    background: white;
+    color: black;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 25px;
+  }
+  
+  .addBtn:hover {
+    background-color: #bbb;
+  }
+
+  #myInput {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    letter-spacing: .13rem;
+  }
